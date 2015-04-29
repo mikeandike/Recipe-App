@@ -30,7 +30,7 @@ static NSString *cellID = @"cellID";
 }
 
 - (void)registerTableView:(UITableView *)tableView {
-    
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
 }
 
 @end
