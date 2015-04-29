@@ -8,6 +8,7 @@
 
 #import "RecipesTableViewDataSource.h"
 #import "RARecipes.h"
+#import "RACustomCellTableViewCell.h"
 
 static NSString *cellID = @"cellID";
 
@@ -19,18 +20,19 @@ static NSString *cellID = @"cellID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-    }
+ 
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     
     cell.textLabel.text = [RARecipes titleAtIndex:indexPath.row];
-    
+    cell.detailTextLabel.text = [RARecipes descriptionAtIndex:indexPath.row];
+
+    //[cell.detailTextLabel setText:[RARecipes descriptionAtIndex:indexPath.row]];
+  
     return cell;
 }
 
 - (void)registerTableView:(UITableView *)tableView {
-    
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
 }
 
 @end
