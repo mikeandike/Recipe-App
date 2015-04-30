@@ -8,8 +8,9 @@
 
 #import "RecipeViewController.h"
 #import "RecipesTableViewDataSource.h"
+#import "RecipeDetailViewController.h"
 
-@interface RecipeViewController ()
+@interface RecipeViewController () <UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) RecipesTableViewDataSource *dataSource;
@@ -20,13 +21,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Dank Recipes";
     
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.dataSource = [RecipesTableViewDataSource new];
     [self.dataSource registerTableView:self.tableView];
+    
     self.tableView.dataSource = self.dataSource;
+    self.tableView.delegate = self;
     
     [self.view addSubview:self.tableView];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    RecipeDetailViewController *recipeDetailViewController = [RecipeDetailViewController new];
+    recipeDetailViewController.recipeIndex = indexPath.row;
+    
+    [self.navigationController pushViewController:recipeDetailViewController animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

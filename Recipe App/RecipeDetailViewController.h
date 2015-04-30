@@ -1,5 +1,5 @@
 //
-//  RecipeViewController.h
+//  RecipeDetailViewController.h
 //  Recipe App
 //
 //  Created by Michael Sacks on 4/30/15.
@@ -8,5 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecipeViewController : UIViewController 
+@interface RecipeDetailViewController : UIViewController
+
+@property (nonatomic, assign) NSInteger recipeIndex;
+
 @end
