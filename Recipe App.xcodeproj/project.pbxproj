@@ -20,6 +20,11 @@
 		71F67B74192C8D6A00E609F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71F67B72192C8D6A00E609F1 /* InfoPlist.strings */; };
 		71F67B76192C8D6A00E609F1 /* Recipe_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F67B75192C8D6A00E609F1 /* Recipe_AppTests.m */; };
 		8C9560F91AF2C092008B0EE5 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9560F81AF2C092008B0EE5 /* RecipeDetailViewController.m */; };
+		8C9560FD1AF2E48C008B0EE5 /* salmon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9560FC1AF2E48C008B0EE5 /* salmon.jpg */; };
+		8C9560FF1AF2E95B008B0EE5 /* pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9560FE1AF2E95B008B0EE5 /* pork.jpg */; };
+		8C9561011AF2E9E7008B0EE5 /* pumpkinPie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9561001AF2E9E7008B0EE5 /* pumpkinPie.jpg */; };
+		8C9561051AF2EBEE008B0EE5 /* chocolateCake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9561041AF2EBEE008B0EE5 /* chocolateCake.jpg */; };
+		8C9561071AF2EC7E008B0EE5 /* chickenJambalaya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C9561061AF2EC7E008B0EE5 /* chickenJambalaya.jpg */; };
 		8CB80BAB1AF2739700B54613 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB80BAA1AF2739700B54613 /* RecipeViewController.m */; };
 		8CB80BAE1AF276B100B54613 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB80BAD1AF276B100B54613 /* RARecipes.m */; };
 		8CB80BB11AF2775800B54613 /* RecipesTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB80BB01AF2775800B54613 /* RecipesTableViewDataSource.m */; };
@@ -54,6 +59,11 @@
 		71F67B75192C8D6A00E609F1 /* Recipe_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe_AppTests.m; sourceTree = "<group>"; };
 		8C9560F71AF2C092008B0EE5 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		8C9560F81AF2C092008B0EE5 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
+		8C9560FC1AF2E48C008B0EE5 /* salmon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salmon.jpg; sourceTree = "<group>"; };
+		8C9560FE1AF2E95B008B0EE5 /* pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pork.jpg; sourceTree = "<group>"; };
+		8C9561001AF2E9E7008B0EE5 /* pumpkinPie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pumpkinPie.jpg; sourceTree = "<group>"; };
+		8C9561041AF2EBEE008B0EE5 /* chocolateCake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chocolateCake.jpg; sourceTree = "<group>"; };
+		8C9561061AF2EC7E008B0EE5 /* chickenJambalaya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chickenJambalaya.jpg; sourceTree = "<group>"; };
 		8CB80BA91AF2739700B54613 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		8CB80BAA1AF2739700B54613 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 		8CB80BAC1AF276B100B54613 /* RARecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARecipes.h; sourceTree = "<group>"; };
@@ -130,6 +140,11 @@
 				8CB80BAF1AF2775800B54613 /* RecipesTableViewDataSource.h */,
 				8CB80BB01AF2775800B54613 /* RecipesTableViewDataSource.m */,
 				71F67B62192C8D6A00E609F1 /* Images.xcassets */,
+				8C9560FE1AF2E95B008B0EE5 /* pork.jpg */,
+				8C9560FC1AF2E48C008B0EE5 /* salmon.jpg */,
+				8C9561001AF2E9E7008B0EE5 /* pumpkinPie.jpg */,
+				8C9561061AF2EC7E008B0EE5 /* chickenJambalaya.jpg */,
+				8C9561041AF2EBEE008B0EE5 /* chocolateCake.jpg */,
 				71F67B57192C8D6A00E609F1 /* Supporting Files */,
 			);
 			path = "Recipe App";
@@ -240,7 +255,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9560FF1AF2E95B008B0EE5 /* pork.jpg in Resources */,
+				8C9561011AF2E9E7008B0EE5 /* pumpkinPie.jpg in Resources */,
+				8C9561071AF2EC7E008B0EE5 /* chickenJambalaya.jpg in Resources */,
+				8C9561051AF2EBEE008B0EE5 /* chocolateCake.jpg in Resources */,
 				71F67B5B192C8D6A00E609F1 /* InfoPlist.strings in Resources */,
+				8C9560FD1AF2E48C008B0EE5 /* salmon.jpg in Resources */,
 				71F67B63192C8D6A00E609F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

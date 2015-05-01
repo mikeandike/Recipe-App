@@ -9,6 +9,7 @@
 
 #import "RARecipes.h"
 
+static NSString * const RecipeImageKey = @"recipeImage";
 static NSString * const RecipeTitleKey = @"recipeTitle";
 static NSString * const RecipeDescriptionKey = @"recipeDescription";
 static NSString * const RecipeIngredientsKey = @"recipeIngredients";
@@ -50,11 +51,16 @@ static NSString * const DirectionsKey = @"directions";
     return [self recipes][index][DirectionsKey];
 }
 
++ (NSString *)imageAtIndex:(NSInteger)index{
+    return [self recipes][index][RecipeImageKey];
+}
+
 + (NSArray *)recipes {
     
     return @[
              @{
-                 RecipeTitleKey : @"Lynn's Best Herb-and-Garlic Pork",
+                 RecipeImageKey : @"pork.jpg",
+                 RecipeTitleKey : @"Lynn's Herb-and-Garlic Pork",
                  RecipeDescriptionKey : @"Garlic, chili powder, and lots of fresh herbs make a wonderful marinade for the pork in this grilling recipe.",
                  RecipeIngredientsKey : @[
                          @{IngredientTypeKey: @"olive oil", IngredientVolumeKey: @"1/4 cup"},
@@ -73,6 +79,7 @@ static NSString * const DirectionsKey = @"directions";
                                    @"Remove strings and slice meat to serve. Use any leftover pork for sandwiches. Makes 12 servings."]
                  },
              @{
+                 RecipeImageKey : @"salmon.jpg",
                  RecipeTitleKey : @"Glorious Glazed Salmon",
                  RecipeDescriptionKey : @"As the salmon grills, the tamari sauce and balsamic vinegar glaze caramelizes on the fish, adding color and flavor to the final dish.",
                  RecipeIngredientsKey : @[
@@ -88,6 +95,7 @@ static NSString * const DirectionsKey = @"directions";
                                    @"Serve the grilled fish with some rice pilaf and asparagus spears, if you like. Makes 4 servings."]
                  },
              @{
+                 RecipeImageKey : @"pumpkinPie.jpg",
                  RecipeTitleKey : @"Paradise Pumpkin Pie",
                  RecipeDescriptionKey : @"This extravagant two-layered dessert has a cream cheese base topped with a pumpkin filling and sweet pecans.",
                  RecipeIngredientsKey : @[
@@ -110,7 +118,8 @@ static NSString * const DirectionsKey = @"directions";
                                    ]
                  },
              @{
-                 RecipeTitleKey : @"Chicken & chorizo jambalaya",
+                 RecipeImageKey : @"chickenJambalaya.jpg",
+                 RecipeTitleKey : @"Chicken & Chorizo Jambalaya",
                  RecipeDescriptionKey : @"A Cajun-inspired rice pot recipe with spicy Spanish sausage, sweet peppers and tomatoes",
                  RecipeIngredientsKey : @[
                          @{IngredientTypeKey: @"olive oil", IngredientVolumeKey: @"1 tbs"},
@@ -123,7 +132,8 @@ static NSString * const DirectionsKey = @"directions";
                                    @"Stir the chicken back in with the rice, add the tomatoes and stock. Cover and simmer for 20-25 mins until the rice is tender."]
                  },
              @{
-                 RecipeTitleKey : @"Ultimate chocolate cake",
+                 RecipeImageKey : @"chocolateCake.jpg",
+                 RecipeTitleKey : @"Ultimate Chocolate Cake",
                  RecipeDescriptionKey : @"Indulge yourself with Angela Nilsen's heavenly moist and fudgy chocolate cake - perfect for celebrations - birthdays, weddings, christenings - any excuse!",
                  RecipeIngredientsKey : @[
                          @{IngredientTypeKey: @"dark chocolate", IngredientVolumeKey: @"200 g"},

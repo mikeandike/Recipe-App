@@ -26,4 +26,6 @@
 
 + (NSArray *)directionsAtIndex:(NSInteger)index;
 
++ (NSString *)imageAtIndex:(NSInteger)index;
+
 @end

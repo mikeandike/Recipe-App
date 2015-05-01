@@ -29,6 +29,13 @@ static CGFloat marginVertical = 30;
     
     CGFloat topMargin = 20;
     
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[RARecipes imageAtIndex:self.recipeIndex]]];
+    [imageView setFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    [scrollView addSubview:imageView];
+
+    
+    topMargin += 200;
+    
     CGFloat heightForDescription = [self heightForDescription:[RARecipes descriptionAtIndex:self.recipeIndex]];
     
     UILabel *descriptionLabel = [[UILabel alloc]initWithFrame:CGRectMake(margin, topMargin, self.view.frame.size.width - 2 * margin, heightForDescription)];
